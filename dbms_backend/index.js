@@ -20,12 +20,7 @@ const con = mysql.createConnection({
   dateStrings: true,
   insecureAuth: true,
 });
-// const con = mysql.createConnection({
-//   host: 'localhost',
-//   user: 'root',
-//   password: 'Asdfghjkl123',
-//   database: 'ttm_system',
-// });
+
 con.connect((err) => {
   if (err) throw err;
   console.log('Connected to the MySQL database');
